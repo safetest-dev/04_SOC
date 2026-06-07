@@ -83,6 +83,8 @@ The lab runs on a **3-VM topology** on a single host hypervisor, on an isolated 
    3. Manager decodes the logs → matches rules 5710 / 5503 → correlates into 2502 (level 10).
    4. Indexer stores the alerts; the analyst triages them in the Dashboard.
 ```
+---
+<img width="1400" height="820" alt="image" src="https://github.com/user-attachments/assets/701758af-25a9-45b0-b575-b2dfae88253f" />
 
 ---
 
