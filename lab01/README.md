@@ -200,9 +200,6 @@ The value of Wazuh here is **correlation**: individual low-severity events (leve
 | File | Description |
 |------|-------------|
 | `SOC-01_SSH_Invalid_User_Detection.pdf` | Full analysis report |
-| `SOC-01_slide[1-8].jpg` | Instagram carousel (300 DPI) |
-| `SOC-01_caption.md` | Instagram captions (long / short) |
-| `SOC-01_linkedin_caption.md` | LinkedIn caption |
 | `alert.json` | Raw Wazuh alert document |
 | `README.md` | This file |
 
