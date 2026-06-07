@@ -1,0 +1,97 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.06.07",
+  "_id": "eApEo54B-is50HBcm8xG",
+  "_score": 1,
+  "_source": {
+    "predecoder": {
+      "hostname": "monitor",
+      "program_name": "sshd-session",
+      "timestamp": "Jun 07 18:07:20"
+    },
+    "agent": {
+      "ip": "192.168.122.187",
+      "name": "monitor",
+      "id": "001"
+    },
+    "manager": {
+      "name": "mike-pc"
+    },
+    "data": {
+      "srcuser": "hacker",
+      "srcip": "192.168.122.97"
+    },
+    "rule": {
+      "mail": false,
+      "level": 5,
+      "hipaa": [
+        "164.312.b"
+      ],
+      "pci_dss": [
+        "10.2.4",
+        "10.2.5",
+        "10.6.1"
+      ],
+      "tsc": [
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "sshd: Attempt to login using a non-existent user",
+      "groups": [
+        "syslog",
+        "sshd",
+        "authentication_failed",
+        "invalid_login"
+      ],
+      "nist_800_53": [
+        "AU.14",
+        "AC.7",
+        "AU.6"
+      ],
+      "gdpr": [
+        "IV_35.7.d",
+        "IV_32.2"
+      ],
+      "firedtimes": 4,
+      "mitre": {
+        "technique": [
+          "Password Guessing",
+          "SSH"
+        ],
+        "id": [
+          "T1110.001",
+          "T1021.004"
+        ],
+        "tactic": [
+          "Credential Access",
+          "Lateral Movement"
+        ]
+      },
+      "id": "5710",
+      "gpg13": [
+        "7.1"
+      ]
+    },
+    "decoder": {
+      "parent": "sshd",
+      "name": "sshd"
+    },
+    "full_log": "Jun 07 18:07:20 monitor sshd-session[86982]: Failed password for invalid user hacker from 192.168.122.97 port 58318 ssh2",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-06-07T18:07:20.423Z",
+    "location": "journald",
+    "id": "1780855640.181251",
+    "timestamp": "2026-06-08T01:07:20.423+0700"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-06-07T18:07:20.423Z"
+    ],
+    "@timestamp": [
+      "2026-06-07T18:07:20.423Z"
+    ]
+  }
+}
